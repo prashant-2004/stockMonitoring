@@ -11,5 +11,12 @@
             "src": "/(.*)",
             "dest":"/"
         }
+    ],
+    "redirects":[
+        {
+             "source": "/", 
+             "destination": "/server.js",
+             "permanent": false 
+        }
     ]
 }
