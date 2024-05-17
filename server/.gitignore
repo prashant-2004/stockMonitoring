@@ -25,3 +25,5 @@ yarn-error.log*
 
 # config
 config.env
+.vercel
+.env*.local
