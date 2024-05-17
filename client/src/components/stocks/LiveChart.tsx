@@ -10,7 +10,7 @@ function LiveChart({ symbol }: { symbol: string }): JSX.Element {
         getStockData(symbol).then(data =>{
             setStockData(data);
         });
-    }, [])
+    }, [symbol])
 
     const seriesData = useMemo(()=> formatStockData(stockData),[stockData]);
 

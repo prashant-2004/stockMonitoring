@@ -8,9 +8,9 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { useAppStore } from '../../appStore';
-import Autocomplete from '@mui/material/Autocomplete';
-import { getStockData } from '../stocks/services';
-import { useState } from 'react';
+// import Autocomplete from '@mui/material/Autocomplete';
+// import { getStockData } from '../stocks/services';
+// import { useState } from 'react';
 
 
 const AppBar = styled(MuiAppBar, {
@@ -59,23 +59,23 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const handleSearch = async (value:any,setStockOptions:any) => {
-  try {
-    const data = await getStockData(value);
-    console.log("SYMBOLS",data);
-    if (data.bestMatches) {
-      setStockOptions(data.bestMatches.map((match:any) => match['1. symbol']));
-    }
-  } catch (error) {
-    console.error('Error fetching stock data:', error);
-  }
-};
+// const handleSearch = async (value:any,setStockOptions:any) => {
+//   try {
+//     const data = await getStockData(value);
+//     console.log("SYMBOLS",data);
+//     if (data.bestMatches) {
+//       setStockOptions(data.bestMatches.map((match:any) => match['1. symbol']));
+//     }
+//   } catch (error) {
+//     console.error('Error fetching stock data:', error);
+//   }
+// };
 
 
 export default function NavBar() {
   const updateOpen = useAppStore((state) => state.updateOpen);
   const dopen = useAppStore((state) => state.dopen);
-  const [stock_options, setStockOptions] = useState([]);
+  // const [stock_options, setStockOptions] = useState([]);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">
