@@ -7,6 +7,10 @@ const cookieParser = require('cookie-parser');
 
 require('./db/conn');
 
+app.use("/",(req, res) =>{
+  res.send("SERVER IS RUNNING...");
+})
+
 //read json file
 app.use(express.json());
 
