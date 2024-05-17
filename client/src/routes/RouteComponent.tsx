@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UserLogin from "../pages/users/login";
-import UserSignup from "../pages/users/signup";
-import Home from "../pages/users/home";
-import Watchlist from '../pages/users/watchlist';
+import Login from "../pages/users/Login";
+import Signup from "../pages/users/Signup";
+import Home from "../pages/users/Home";
+import Watchlist from '../pages/users/Watchlist';
 
 function RoutesComponent(): JSX.Element {
   return (
     <BrowserRouter>
     <Routes>
-      <Route path="/" element={<UserLogin />} />
-      <Route path="/user-signup" element={<UserSignup />} />
+      <Route path="/" element={<Login />} />
+      <Route path="/user-signup" element={<Signup />} />
       <Route path="/home" element={<Home />} />
       <Route path='/watchlist' element={<Watchlist/>}/>
     </Routes>
