@@ -8,9 +8,9 @@ const cookieParser = require('cookie-parser');
 require('./db/conn');
 app.use(cors());
 
-// app.use("/",(req, res) =>{
-//   res.send("SERVER IS RUNNING...");
-// })
+app.use("/",(req, res) =>{
+  res.send("SERVER IS RUNNING...");
+})
 
 //read json file
 app.use(express.json());
