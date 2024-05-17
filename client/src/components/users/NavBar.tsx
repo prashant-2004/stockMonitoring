@@ -8,6 +8,7 @@ import InputBase from '@mui/material/InputBase';
 import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import { useAppStore } from '../../appStore';
+
 // import Autocomplete from '@mui/material/Autocomplete';
 // import { getStockData } from '../stocks/services';
 // import { useState } from 'react';
@@ -76,6 +77,7 @@ export default function NavBar() {
   const updateOpen = useAppStore((state) => state.updateOpen);
   const dopen = useAppStore((state) => state.dopen);
   // const [stock_options, setStockOptions] = useState([]);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed">

@@ -1,4 +1,3 @@
-
 export const searchSymbol = async (symbol:string) =>{
     const apiKey = "UWNC92MVR8JO85DD";
     const symbol_2 = symbol;
