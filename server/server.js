@@ -1,15 +1,16 @@
 const dotenv = require("dotenv");
 dotenv.config({ path: './.env.local' });
-
+const cors = require("cors");
 const express = require("express");
 const app = express();
 const cookieParser = require('cookie-parser');
 
 require('./db/conn');
+app.use(cors());
 
-app.use("/",(req, res) =>{
-  res.send("SERVER IS RUNNING...");
-})
+// app.use("/",(req, res) =>{
+//   res.send("SERVER IS RUNNING...");
+// })
 
 //read json file
 app.use(express.json());
