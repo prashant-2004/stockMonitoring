@@ -11,7 +11,7 @@ function Login(): JSX.Element {
   const loginUser = async (e: FormEvent) => {
     e.preventDefault();
 
-    const res = await fetch("http://localhost:8000/user-signin", {
+    const res = await fetch("https://stock-monitoring-backend.vercel.app/user-signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

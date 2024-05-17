@@ -46,7 +46,7 @@ function Signup(): JSX.Element {
     }
 
     
-    const resp = await fetch("http://localhost:8000/user-signup", {
+    const resp = await fetch("https://stock-monitoring-backend.vercel.app/user-signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
