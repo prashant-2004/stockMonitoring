@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState} from "react";
-import { getStockData } from "./services";
-import { formatStockData } from "./utils";
+import { getStockData } from "./getStockData";
+import { formatStockData } from "./formatStockData";
 import ReactApexChart from "react-apexcharts";
 
 function LiveChart({ symbol }: { symbol: string }): JSX.Element {
